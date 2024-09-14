@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { TabsPage } from './tabs.page';
-import { TabsPageRoutingModule } from './tabs-routing.module';
+
+import { MiBilleteraPageRoutingModule } from './mi-billetera-routing.module';
+
+import { MiBilleteraPage } from './mi-billetera.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule
+    MiBilleteraPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [MiBilleteraPage]
 })
-export class TabsPageModule {}
+export class MiBilleteraPageModule {}

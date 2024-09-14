@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { TabsPage } from './tabs.page';
-import { TabsPageRoutingModule } from './tabs-routing.module';
+
+import { BitcoinPageRoutingModule } from './bitcoin-routing.module';
+
+import { BitcoinPage } from './bitcoin.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule
+    BitcoinPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [BitcoinPage]
 })
-export class TabsPageModule {}
+export class BitcoinPageModule {}

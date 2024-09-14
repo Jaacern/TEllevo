@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { TabsPage } from './tabs.page';
-import { TabsPageRoutingModule } from './tabs-routing.module';
+
+import { CreaTuCuentaPageRoutingModule } from './crea-tu-cuenta-routing.module';
+
+import { CreaTuCuentaPage } from './crea-tu-cuenta.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule
+    CreaTuCuentaPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [CreaTuCuentaPage]
 })
-export class TabsPageModule {}
+export class CreaTuCuentaPageModule {}
