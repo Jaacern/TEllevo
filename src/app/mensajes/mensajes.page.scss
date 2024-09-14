@@ -1,0 +1,19 @@
+
+$font-family: 'Montserrat', sans-serif;
+
+ion-header {
+    // Puedes definir el color de fondo del header aquí si lo deseas
+    --background: transparent; // El color de fondo será definido en el ion-toolbar
+  
+    ion-toolbar {
+      --background: #007bff; // Color de fondo azul para el toolbar
+      color: #ffffff; // Color del texto blanco por defecto para el toolbar
+  
+      ion-title {
+        font-family: $font-family; // Aplica la fuente Montserrat
+        font-weight: 700; // Negrita
+        font-size: 15.3px; // Tamaño de fuente
+        color: #ffffff; // Color de texto blanco
+      }
+    }
+  }

@@ -1,0 +1,83 @@
+
+$font-family: 'Montserrat', sans-serif;
+
+ion-header {
+    // Puedes definir el color de fondo del header aquí si lo deseas
+    --background: transparent; // El color de fondo será definido en el ion-toolbar
+  
+    ion-toolbar {
+      --background: #007bff; // Color de fondo azul para el toolbar
+      color: #ffffff; // Color del texto blanco por defecto para el toolbar
+  
+      ion-title {
+        font-family: $font-family; // Aplica la fuente Montserrat
+        font-weight: 700; // Negrita
+        font-size: 15.3px; // Tamaño de fuente
+        color: #ffffff; // Color de texto blanco
+      }
+    }
+  }
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #ffffff;
+  text-align: center;
+
+  .profile-img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile-name {
+        color: #007bff;
+        font-family: $font-family; // Apply Montserrat font
+        font-weight: 700; // Apply bold weight (700)
+        font-size: 15.3px; // Set font size to 15.3px
+      
+    }
+
+    .profile-details {
+      margin-top: 8px;
+      color: #007bff;
+
+      p {
+        margin: 4px 0;
+        font-size: 14px;
+
+    
+      }
+    }
+  }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  
+    ion-button.custom-button {
+      font-family: $font-family; // Apply Montserrat font
+      font-weight: 700; // Apply bold weight (700)
+      font-size: 15.3px; // Set font size to 15.3px
+      --background: #ffffff; 
+      --border-color: #007bff;
+      --border-width: 1px;
+      --border-radius: 4px;
+      margin-bottom: 8px;
+    }
+  
+    ion-button.custom-button[color='danger'] {
+      // Optional: Additional styles for the "Sign Out" button
+      --background: #ff3b30; // Red background
+      --color: #ffffff; // White text
+    }
+  }

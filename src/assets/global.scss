@@ -1,18 +1,18 @@
 /* Estilos globales para el ion-tab-bar */
 ion-tab-bar {
-    --background: #007bff; // Color de fondo del tab bar (opcional, blanco por defecto)
+    --background: #ffffff; // Color de fondo del tab bar (opcional, blanco por defecto)
   }
   
   ion-tab-button {
     --color: #007bff; // Color del texto y icono del tab no seleccionado
-    --background: #007bff; // Color de fondo del tab (opcional, blanco por defecto)
+    --background: #ffffff; // Color de fondo del tab (opcional, blanco por defecto)
     
     ion-icon {
       color: #ffffff; // Color de los iconos no seleccionados
     }
   
     ion-label {
-      color: #ffffff; // Color del texto no seleccionado
+      color: #007bff; // Color del texto no seleccionado
     }
   
     &.tab-selected {

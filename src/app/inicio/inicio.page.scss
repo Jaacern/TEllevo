@@ -1,0 +1,91 @@
+
+$font-family: 'Montserrat', sans-serif;
+
+ion-header {
+    // Puedes definir el color de fondo del header aquí si lo deseas
+    --background: transparent; // El color de fondo será definido en el ion-toolbar
+  
+    ion-toolbar {
+      --background: #007bff; // Color de fondo azul para el toolbar
+      color: #ffffff; // Color del texto blanco por defecto para el toolbar
+  
+      ion-title {
+        font-family: $font-family; // Aplica la fuente Montserrat
+        font-weight: 700; // Negrita
+        font-size: 15.3px; // Tamaño de fuente
+        color: #ffffff; // Color de texto blanco
+      }
+    }
+  }
+
+  ion-content {
+    .intro-text {
+      text-align: center;
+      margin: 20px;
+  
+      h2 {
+        font-size: 20px;
+        font-family: $font-family;
+        font-weight: 700;
+        color: #007bff; // Color azul
+      }
+    }
+  
+    ion-grid {
+      ion-row {
+        display: flex;
+        flex-direction: column; // Cambia la dirección a columna en dispositivos móviles
+      }
+  
+      ion-col {
+        display: flex;
+        justify-content: center; // Centra las tarjetas horizontalmente
+        margin-bottom: 10px; // Espacio entre las tarjetas
+  
+        ion-card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          width: 100%;
+          max-width: 400px; // Ajusta el tamaño máximo si es necesario
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+          }
+  
+          ion-card-content {
+            padding: 20px;
+  
+            h3 {
+              font-family: $font-family;
+              font-weight: 700;
+              font-size: 18px;
+              color: #007bff; // Color azul
+              margin: 0;
+            }
+  
+            p {
+              font-family: $font-family;
+              font-size: 14px;
+              color: #333;
+              margin: 5px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos para dispositivos móviles
+  @media (max-width: 767px) {
+    ion-grid {
+      ion-row {
+        flex-direction: column; // Asegura que las tarjetas se coloquen en una columna en dispositivos móviles
+      }
+    }
+  }

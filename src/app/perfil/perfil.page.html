@@ -1,13 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>perfil</ion-title>
+    <ion-title>Mi Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">perfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <!-- Main Content -->
+  <div class="profile-header">
+    <img src="https://via.placeholder.com/80" alt="Foto de perfil" class="profile-img">
+    <div class="profile-info">
+      <h1 class="profile-name">Nombre Apellido</h1>
+      <div class="profile-details">
+        <p><strong>Nivel:</strong> Veterano</p>
+        <p><strong>Viajes Realizados:</strong> 25</p>
+        <p><strong>Km recorridos:</strong> 84.329 kms</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Button Container -->
+  <div class="button-container">
+    <ion-button class="custom-button" fill="clear">
+      Editar información
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+    <ion-button class="custom-button" fill="clear">
+      Mi Billetera
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+    <ion-button class="custom-button" fill="clear">
+      Mi Vehículo
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+    <ion-button class="custom-button" fill="clear" color="danger">
+      Cerrar Sesión
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-button>
+  </div>
 </ion-content>
