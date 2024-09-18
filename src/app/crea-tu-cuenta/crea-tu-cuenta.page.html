@@ -1,47 +1,45 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title class="header-title">Crea tu cuenta!</ion-title>
+    <ion-title class="header-title">
+      Crea<br>Tu Cuenta!
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="container">
-    <ion-card class="signup-card">
-      <ion-card-content>
-        <form>
-          <ion-item>
-            <ion-icon name="mail-outline" slot="start"></ion-icon>
-            <ion-input type="email" placeholder="Email" class="custom-input"></ion-input>
-          </ion-item>
+    <!-- Campos de entrada fuera del card dd-->
+    <form>
+      <ion-item class="custom-item">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input type="email" placeholder="Email" class="custom-input"></ion-input>
+      </ion-item>
 
-          <ion-item>
-            <ion-icon name="person-outline" slot="start"></ion-icon>
-            <ion-input type="text" placeholder="Nombre" class="custom-input"></ion-input>
-          </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Nombre" class="custom-input"></ion-input>
+      </ion-item>
 
-          <ion-item>
-            <ion-icon name="person-outline" slot="start"></ion-icon>
-            <ion-input type="text" placeholder="Apellido" class="custom-input"></ion-input>
-          </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Apellido" class="custom-input"></ion-input>
+      </ion-item>
 
-          <ion-item>
-            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
-            <ion-input type="password" placeholder="Contraseña" class="custom-input"></ion-input>
-          </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="Contraseña" class="custom-input"></ion-input>
+      </ion-item>
 
-          <ion-item>
-            <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
-            <ion-input type="password" placeholder="Repite Contraseña" class="custom-input"></ion-input>
-          </ion-item>
+      <ion-item class="custom-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="Repite Contraseña" class="custom-input"></ion-input>
+      </ion-item>
+    </form>
+    s
 
-          <ion-item class="terms-item" lines="none">
-            <ion-checkbox slot="start" class="terms-checkbox"></ion-checkbox>
-            <ion-label class="terms-label">Estoy de acuerdo con los términos y condiciones</ion-label>
-          </ion-item>
+    
 
-          <ion-button expand="full" class="create-account-button">Crear Cuenta</ion-button>
-        </form>
-      </ion-card-content>
-    </ion-card>
+    <!-- Botón de guardar fuera del card -->
+    <ion-button expand="full" class="guardar-button">Guardar</ion-button>
   </div>
 </ion-content>

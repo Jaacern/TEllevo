@@ -28,6 +28,10 @@ const routes: Routes = [
     loadChildren: () => import('./terminos-condiciones/terminos-condiciones.module').then(m => m.TerminosCondicionesPageModule)
   },
   {
+    path: 'comienzo',
+    loadChildren: () => import('./comienzo/comienzo.module').then(m => m.ComienzoModule)
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then(m => m.PerfilPageModule)
   },

@@ -1,13 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>editar_informacion</ion-title>
+    <ion-title class="header-title">
+      Edita<br>Tu Información!
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">editar_informacion</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="container">
+    <!-- Campos de entrada fuera del card -->
+    <form>
+      <ion-item class="custom-item">
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input type="email" placeholder="Email" class="custom-input"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Nombre" class="custom-input"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item">
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-input type="text" placeholder="Apellido" class="custom-input"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="Contraseña" class="custom-input"></ion-input>
+      </ion-item>
+
+      <ion-item class="custom-item">
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="Repite Contraseña" class="custom-input"></ion-input>
+      </ion-item>
+    </form>
+
+    <!-- Botón de guardar fuera del card -->
+    <ion-button expand="full" class="guardar-button">Guardar</ion-button>
+  </div>
 </ion-content>
