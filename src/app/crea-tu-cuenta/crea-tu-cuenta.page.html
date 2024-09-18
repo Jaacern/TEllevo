@@ -8,7 +8,6 @@
 
 <ion-content>
   <div class="container">
-    <!-- Campos de entrada fuera del card dd-->
     <form>
       <ion-item class="custom-item">
         <ion-icon name="mail-outline" slot="start"></ion-icon>
@@ -34,10 +33,17 @@
         <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
         <ion-input type="password" placeholder="Repite Contraseña" class="custom-input"></ion-input>
       </ion-item>
-    </form>
-    s
 
-    
+      <!-- Checkbox de términos y condiciones -->
+      <ion-item>
+        <ion-checkbox slot="start"></ion-checkbox>
+        <span>
+          <span class="terms-link">Estoy de acuerdo con </span>
+          <a href="/terminos-condiciones" class="terms-link">Términos y condiciones</a>
+        </span>
+      </ion-item>
+      
+    </form>
 
     <!-- Botón de guardar fuera del card -->
     <ion-button expand="full" class="guardar-button">Guardar</ion-button>

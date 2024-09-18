@@ -19,7 +19,7 @@ ion-content {
 
 /* Imagen centrada */
 .welcome-image {
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -100,7 +100,6 @@ ion-item ion-input {
   font-size: 15.3px;
 }
 
-
 /* Botón de inicio de sesión */
 .login-button {
   font-family: 'Montserrat', sans-serif;
@@ -117,14 +116,12 @@ ion-item ion-input {
   margin-top: 20px;
 }
 
-.signup-link {
-  color: #007bff; /* Azul */
-  text-decoration: none; /* Sin subrayado */
-  font-weight: bold; /* Texto en negrita */
-}
-
-
 /* Estilo para la casilla de verificación */
 .remember-me-checkbox {
   margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}
+
+.signup-link {
+  color: blue; /* Cambia esto al color que desees */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }

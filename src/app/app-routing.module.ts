@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/inicio',
+    redirectTo: 'bienvenida', // Redirige a la página "bienvenida"
     pathMatch: 'full'
+  },
+  {
+    path: 'bienvenida',
+    loadChildren: () => import('./bienvenida/bienvenida.module').then(m => m.BienvenidaPageModule)
   },
   {
     path: 'inicio',
@@ -34,10 +38,6 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then(m => m.PerfilPageModule)
-  },
-  {
-    path: 'bienvenida',
-    loadChildren: () => import('./bienvenida/bienvenida.module').then(m => m.BienvenidaPageModule)
   },
   {
     path: 'soy-pasajero',
