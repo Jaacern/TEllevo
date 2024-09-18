@@ -1,35 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Hola!</ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="intro-text">
-    <h2>¿Qué quieres hacer hoy?</h2>
+    <h2>Hola</h2>
+    <h2>¿Qué quieres hacer Hoy?</h2>
   </div>
-
+  
   <ion-grid>
     <ion-row>
       <!-- Card: Soy Pasajero -->
-      <ion-col size="12">
+      <ion-col size="12" size-md="6">
         <ion-card button (click)="onPassengerClick()">
-          <img src="assets/images/persona.png" alt="Soy Pasajero" />
           <ion-card-content>
             <h3>Soy Pasajero</h3>
             <p>Quiero tomar un viaje</p>
           </ion-card-content>
+          <img src="assets/images/pasajero.png" alt="Soy Pasajero" class="card-image" />
         </ion-card>
       </ion-col>
 
       <!-- Card: Soy Conductor -->
-      <ion-col size="12">
+      <ion-col size="12" size-md="6">
         <ion-card button (click)="onDriverClick()">
-          <img src="assets/images/conductor.png" alt="Soy Conductor" />
           <ion-card-content>
             <h3>Soy Conductor</h3>
             <p>Quiero publicar un viaje</p>
           </ion-card-content>
+          <img src="assets/images/conductor.png" alt="Soy Conductor" class="card-image" />
         </ion-card>
       </ion-col>
     </ion-row>

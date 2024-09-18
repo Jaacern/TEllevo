@@ -1,91 +1,101 @@
-
 $font-family: 'Montserrat', sans-serif;
+$card-bg-color: #007bff; // Color de fondo azul
+$text-color: #ffffff; // Color del texto blanco
+$image-size: 120px; // Tamaño estándar para las imágenes
 
 ion-header {
-    // Puedes definir el color de fondo del header aquí si lo deseas
-    --background: transparent; // El color de fondo será definido en el ion-toolbar
-  
-    ion-toolbar {
-      --background: #007bff; // Color de fondo azul para el toolbar
-      color: #ffffff; // Color del texto blanco por defecto para el toolbar
-  
-      ion-title {
-        font-family: $font-family; // Aplica la fuente Montserrat
-        font-weight: 700; // Negrita
-        font-size: 15.3px; // Tamaño de fuente
-        color: #ffffff; // Color de texto blanco
-      }
+  --background: transparent; // El color de fondo será definido en el ion-toolbar
+
+  ion-toolbar {
+    --background: #007bff; // Color de fondo azul para el toolbar
+    color: #ffffff; // Color del texto blanco por defecto para el toolbar
+
+    ion-title {
+      font-family: $font-family; // Aplica la fuente Montserrat
+      font-weight: 700; // Negrita
+      font-size: 15.3px; // Tamaño de fuente
+      color: #ffffff; // Color de texto blanco
+    }
+  }
+}
+
+ion-content {
+  .intro-text {
+    text-align: center;
+    margin: 20px;
+
+    h2 {
+      font-size: 20px;
+      font-family: $font-family;
+      font-weight: 700;
+      color: #007bff; // Color azul
     }
   }
 
-  ion-content {
-    .intro-text {
-      text-align: center;
-      margin: 20px;
-  
-      h2 {
-        font-size: 20px;
-        font-family: $font-family;
-        font-weight: 700;
-        color: #007bff; // Color azul
-      }
+  ion-grid {
+    ion-row {
+      display: flex;
+      flex-wrap: wrap; // Permite que las tarjetas se ajusten y no se desborden
+      justify-content: center; // Centra las tarjetas horizontalmente
     }
-  
-    ion-grid {
-      ion-row {
+
+    ion-col {
+      display: flex;
+      justify-content: center; // Centra las tarjetas horizontalmente
+      margin-bottom: 10px; // Espacio entre las tarjetas
+
+      ion-card {
         display: flex;
-        flex-direction: column; // Cambia la dirección a columna en dispositivos móviles
-      }
-  
-      ion-col {
-        display: flex;
-        justify-content: center; // Centra las tarjetas horizontalmente
-        margin-bottom: 10px; // Espacio entre las tarjetas
-  
-        ion-card {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-          width: 100%;
-          max-width: 400px; // Ajusta el tamaño máximo si es necesario
-  
-          img {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 300px; // Ajusta el tamaño máximo para que las tarjetas caben en la pantalla
+        background-color: $card-bg-color; // Establece el color de fondo
+
+        ion-card-content {
+          padding: 20px;
+
+          h3 {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 18px;
+            color: $text-color; // Color blanco
+            margin: 0;
           }
-  
-          ion-card-content {
-            padding: 20px;
-  
-            h3 {
-              font-family: $font-family;
-              font-weight: 700;
-              font-size: 18px;
-              color: #007bff; // Color azul
-              margin: 0;
-            }
-  
-            p {
-              font-family: $font-family;
-              font-size: 14px;
-              color: #333;
-              margin: 5px 0 0;
-            }
+
+          p {
+            font-family: $font-family;
+            font-size: 14px;
+            color: $text-color; // Color blanco
+            margin: 5px 0 0;
           }
+        }
+
+        .card-image {
+          width: $image-size; // Tamaño de la imagen
+          height: $image-size; // Tamaño de la imagen
+          object-fit: cover; // Asegura que la imagen cubra el área del contenedor sin deformarse
+          margin-top: 10px; // Espacio entre el contenido y la imagen
+          border-top: 1px solid #ddd; // Línea delgada para separar la imagen del contenido
         }
       }
     }
   }
-  
-  // Estilos para dispositivos móviles
-  @media (max-width: 767px) {
-    ion-grid {
-      ion-row {
-        flex-direction: column; // Asegura que las tarjetas se coloquen en una columna en dispositivos móviles
-      }
+}
+
+// Estilos para dispositivos móviles
+@media (max-width: 767px) {
+  ion-grid {
+    ion-row {
+      flex-direction: column; // Asegura que las tarjetas se coloquen en una columna en dispositivos móviles
+      align-items: center; // Centra las tarjetas en la columna
+    }
+
+    ion-col {
+      max-width: 100%; // Asegura que las tarjetas ocupen todo el ancho en dispositivos móviles
     }
   }
+}

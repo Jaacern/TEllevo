@@ -1,0 +1,130 @@
+/* Establece el fondo de degradado para el contenido de la página */
+ion-content {
+  --background: linear-gradient(to bottom, #ffffff 50%, #007bff 50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal con alineación centrada */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Imagen centrada */
+.welcome-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Título en azul, con fuente Super Carnival */
+.main-title {
+  font-family: 'Super Carnival', sans-serif;
+  font-size: 36px; /* Tamaño grande para el título */
+  font-weight: bold;
+  color: #007bff; /* Azul */
+  margin-bottom: 20px;
+}
+
+/* Texto de bienvenida centrado */
+.welcome-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.3px;
+  color: #808080; /* Gris */
+  margin-bottom: 20px;
+}
+
+/* Tarjeta de inicio de sesión con fondo blanco */
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Título de la tarjeta */
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.custom-input {
+  --padding-start: 1rem; /* Añadir espacio a la izquierda para el icono */
+  --border-radius: 20px; /* Bordes redondeados */
+  --background: #f0f0f0; /* Color de fondo gris claro */
+  --color: #333; /* Color del texto */
+  --placeholder-color: #aaa; /* Color del texto del placeholder */
+}
+
+ion-item {
+  --background: transparent; /* Elimina el fondo por defecto */
+  --border-color: transparent; /* Elimina el borde por defecto */
+}
+
+ion-icon {
+  color: #666; /* Color del icono */
+  font-size: 20px; /* Tamaño del icono */
+}
+
+ion-input {
+  border-radius: 20px; /* Bordes redondeados del input */
+}
+
+ion-item ion-input {
+  --padding-start: 10px; /* Ajusta el padding para que no choque con el icono */
+}
+
+.remember-me-item {
+  --padding-start: 0; /* Elimina el padding a la izquierda */
+  margin-bottom: 0.5rem; /* Espacio entre el checkbox y el enlace de contraseña */
+}
+
+.remember-me-checkbox {
+  margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}
+
+.remember-me-label {
+  font-family: 'Montserrat', sans-serif;
+  color: #007bff; /* Azul */
+  font-size: 15.3px;
+}
+
+
+/* Botón de inicio de sesión */
+.login-button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #007bff; /* Azul */
+  color: #ffffff; /* Blanco */
+  font-size: 15.3px;
+}
+
+/* Texto de registro */
+.signup-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15.3px;
+  color: #808080; /* Gris */
+  margin-top: 20px;
+}
+
+.signup-link {
+  color: #007bff; /* Azul */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+
+/* Estilo para la casilla de verificación */
+.remember-me-checkbox {
+  margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}

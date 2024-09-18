@@ -21,3 +21,24 @@ ion-tab-bar {
     }
   }
   
+
+
+  @font-face {
+    font-family: 'Super Carnival';
+    src: url('/assets/fonts/super-carnival.eot'); /* IE9 Compat Modes */
+    src: url('/assets/fonts/super-carnival.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/assets/fonts/super-carnival.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/assets/fonts/super-carnival.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/assets/fonts/super-carnival.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/assets/fonts/super-carnival.svg#super-carnival') format('svg'); /* Legacy iOS */
+  }
+  
+  .main-title {
+    font-family: 'Super Carnival', sans-serif;
+    font-size: 36px; // Tamaño grande para el título
+    font-weight: bold;
+    color: #007bff; // Azul
+    margin-bottom: 15px;
+  }
+  
+  

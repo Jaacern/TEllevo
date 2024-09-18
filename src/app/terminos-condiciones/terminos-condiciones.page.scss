@@ -1,0 +1,44 @@
+$font-family: 'Montserrat', sans-serif; // Asegúrate de definir la fuente aquí
+
+ion-header {
+  --background: transparent; // Color de fondo será definido en el ion-toolbar
+
+  ion-toolbar {
+    --background: #007bff; // Color de fondo azul para el toolbar
+    color: #ffffff; // Color del texto blanco por defecto para el toolbar
+
+    ion-title {
+      font-family: $font-family; // Aplica la fuente Montserrat
+      font-weight: 700; // Negrita
+      font-size: 15.3px; // Tamaño de fuente
+      color: #ffffff; // Color de texto blanco
+    }
+  }
+}
+
+ion-content {
+  --background: #ffffff; /* Fondo blanco */
+  height: 100%;
+  display: flex;
+  align-items: flex-start; /* Cambiado a flex-start para permitir scroll */
+  justify-content: center;
+}
+
+.terms-container {
+  padding: 20px;
+  max-height: 80vh; /* Altura máxima para el contenedor */
+  overflow-y: auto; /* Agregar scroll vertical */
+  width: 100%; /* Asegúrate de que ocupa todo el ancho */
+}
+
+/* Estilo para los encabezados dentro del contenedor */
+h2 {
+  font-family: $font-family; /* Fuente Montserrat */
+  color: #007bff; /* Azul */
+  margin-bottom: 10px;
+}
+
+ol {
+  font-family: $font-family; /* Fuente Montserrat */
+  color: #333; /* Color de texto */
+}

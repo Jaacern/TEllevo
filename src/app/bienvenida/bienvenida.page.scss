@@ -1,0 +1,48 @@
+// Establece el fondo blanco para el contenido de la página
+ion-content {
+    --background: #ffffff;
+  }
+  
+  // Contenedor principal con alineación centrada
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  // Logo al centro de la pantalla
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  // Título en azul, negrita, y fuente Super Carnival
+  .main-title {
+    font-family: 'Super Carnival', sans-serif;
+    font-size: 36px; // Tamaño grande para el título
+    font-weight: bold;
+    color: #007bff; // Azul
+    margin-bottom: 15px;
+  }
+  
+  // Estilo para el texto de bienvenida
+  .welcome-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  // Estilo para el botón de comenzar
+  .start-button {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #007bff; // Azul
+    color: #ffffff; // Blanco
+    font-size: 16px;
+  }
+  

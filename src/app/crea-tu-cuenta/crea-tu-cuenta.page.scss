@@ -1,0 +1,103 @@
+/* Establece el fondo blanco para el contenido de la página */
+$font-family: 'Montserrat', sans-serif; // Asegúrate de definir la fuente aquí
+
+ion-header {
+    // Puedes definir el color de fondo del header aquí si lo deseas
+    --background: transparent; // El color de fondo será definido en el ion-toolbar
+  
+    ion-toolbar {
+      --background: #007bff; // Color de fondo azul para el toolbar
+      color: #ffffff; // Color del texto blanco por defecto para el toolbar
+  
+      ion-title {
+        font-family: $font-family; // Aplica la fuente Montserrat
+        font-weight: 700; // Negrita
+        font-size: 15.3px; // Tamaño de fuente
+        color: #ffffff; // Color de texto blanco
+      }
+    }
+  }
+ion-content {
+  --background: #ffffff; /* Fondo blanco */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-item {
+    --background: transparent; /* Elimina el fondo por defecto */
+    --border-color: transparent; /* Elimina el borde por defecto */
+  }
+  
+  ion-icon {
+    color: #666; /* Color del icono */
+    font-size: 20px; /* Tamaño del icono */
+  }
+  
+  ion-input {
+    border-radius: 20px; /* Bordes redondeados del input */
+  }
+  
+/* Contenedor principal con alineación centrada */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Título en azul, con fuente Super Carnival */
+.main-title {
+  font-family: 'Super Carnival', sans-serif;
+  font-size: 15.3px; /* Tamaño según lo especificado */
+  font-weight: bold;
+  color: #007bff; /* Azul */
+  margin-bottom: 20px;
+}
+
+/* Tarjeta de registro con fondo blanco */
+.signup-card {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+/* Campos de entrada */
+.custom-input {
+  --padding-start: 1rem; /* Añadir espacio a la izquierda para el icono */
+  --border-radius: 20px; /* Bordes redondeados */
+  --background: #f0f0f0; /* Color de fondo gris claro */
+  --color: #333; /* Color del texto */
+  --placeholder-color: #aaa; /* Color del texto del placeholder */
+}
+
+/* Estilo para la casilla de verificación */
+.terms-item {
+  --padding-start: 0; /* Elimina el padding a la izquierda */
+  margin-bottom: 1rem; /* Espacio entre el checkbox y el botón */
+}
+
+.terms-checkbox {
+  margin-right: 0.5rem; /* Espacio entre el checkbox y la etiqueta */
+}
+
+.terms-label {
+  font-family: 'Montserrat', sans-serif;
+  color: #007bff; /* Azul */
+  font-size: 15.3px;
+}
+
+/* Botón de crear cuenta */
+.create-account-button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #007bff; /* Azul */
+  color: #ffffff; /* Blanco */
+  font-size: 15.3px;
+  border-radius: 20px; /* Botón redondeado */
+}
